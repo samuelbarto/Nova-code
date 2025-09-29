@@ -1,0 +1,107 @@
+:root {
+  color-scheme: light dark;
+  font-family: "Inter", "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+
+body {
+  margin: 2rem;
+  background: #f5f7fb;
+  color: #0f172a;
+  line-height: 1.6;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 1.5rem;
+  font-weight: 700;
+}
+
+table {
+  margin: 0 auto;
+  width: min(960px, 100%);
+  border-collapse: collapse;
+  background: #ffffff;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 16px 32px rgba(15, 23, 42, 0.12);
+}
+
+thead th {
+  background: #0f172a;
+  color: #f8fafc;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  font-size: 0.85rem;
+  padding: 0.75rem 1rem;
+}
+
+tbody tr:nth-child(even) {
+  background: #eef2ff;
+}
+
+td {
+  padding: 0.75rem 1rem;
+  vertical-align: middle;
+}
+
+td.year {
+  text-align: center;
+  font-weight: 600;
+  width: 15%;
+  white-space: nowrap;
+}
+
+td.club {
+  width: 85%;
+}
+
+.club-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.club-wrapper img {
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+  filter: drop-shadow(0 2px 4px rgba(15, 23, 42, 0.3));
+  background: #ffffff;
+  border-radius: 50%;
+  padding: 0.25rem;
+}
+
+.club-wrapper span {
+  font-weight: 500;
+}
+
+.source {
+  margin-top: 1.5rem;
+  text-align: center;
+  color: #475569;
+  font-size: 0.95rem;
+}
+
+@media (prefers-color-scheme: dark) {
+  body {
+    background: #0f172a;
+    color: #e2e8f0;
+  }
+
+  table {
+    background: rgba(15, 23, 42, 0.9);
+    box-shadow: 0 20px 40px rgba(2, 6, 23, 0.7);
+  }
+
+  tbody tr:nth-child(even) {
+    background: rgba(148, 163, 184, 0.15);
+  }
+
+  .club-wrapper img {
+    background: #e2e8f0;
+  }
+
+  .source {
+    color: #cbd5f5;
+  }
+}
