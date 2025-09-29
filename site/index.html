@@ -2,19 +2,23 @@
 <html lang="fr">
 <head>
   <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Palmarès Ligue des champions</title>
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <h1>Palmarès de la Ligue des champions (1956-2024)</h1>
-  <table>
-    <thead>
-      <tr>
-        <th>Année</th>
-        <th>Vainqueur</th>
-      </tr>
-    </thead>
-    <tbody>
+  <header class="page-header">
+    <h1>Palmarès de la Ligue des Champions (1956–2023)</h1>
+  </header>
+  <main class="page-container">
+    <table class="palmares-table" aria-describedby="palmares-source">
+      <thead>
+        <tr>
+          <th scope="col">Année</th>
+          <th scope="col">Vainqueur</th>
+        </tr>
+      </thead>
+      <tbody>
     <tr>
       <td class="year">1956</td>
       <td class="club">
@@ -627,17 +631,9 @@
         </div>
       </td>
     </tr>
-    <tr>
-      <td class="year">2024</td>
-      <td class="club">
-        <div class="club-wrapper">
-          <img src="https://upload.wikimedia.org/wikipedia/en/5/56/Real_Madrid_CF.svg" alt="Logo Real Madrid (ESP)" loading="lazy" />
-          <span>Real Madrid (ESP)</span>
-        </div>
-      </td>
-    </tr>
-    </tbody>
-  </table>
-  <p class="source">Source&nbsp;: L'Équipe — palmarès historique de la Ligue des champions.</p>
+      </tbody>
+    </table>
+    <p class="source" id="palmares-source">Source&nbsp;: L'Équipe — palmarès historique de la Ligue des champions.</p>
+  </main>
 </body>
 </html>
